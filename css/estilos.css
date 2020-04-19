@@ -1,0 +1,119 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+
+    height: 100%;
+    background: #e570e7; /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 51%, #a849a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%,#c85ec7 51%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%,#c85ec7 51%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+
+img{
+
+    max-width: 100%;
+}
+
+header{
+
+    text-align: center;
+    padding:40px;    
+}
+
+.contenedor{
+
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+h2{
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero {
+
+    margin-bottom: 40px;
+}
+
+.lista-productos{
+
+    margin-top:20px;
+    padding:0;
+}
+
+.lista-productos li {
+
+    float:left;
+    width: 50%;
+    padding:20px;
+    list-style: none;
+    text-align: center;
+}
+
+.lista-productos img{
+
+    border:10px solid rgba(128,1,195,.45);
+    transition: border-color .3s ease-in-out;
+}
+
+.lista-productos img:hover{
+    
+    border:10px solid rgba(128,1,195,1);}
+
+@media(min-width:768px){
+
+    .lista-productos li {
+
+        width: 33.3%;
+    }
+    .lista-productos li:nth-child{
+
+        clear:unset;
+    }
+}
+
+.lista-productos li p {
+
+    font-size:28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.lista-productos li p span{
+
+    color:#ffce00;
+    font-size:40px;
+
+}
+
+.btn{
+
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:10px 40px;
+    margin-top:10px;
+    background-color:#ffce00;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover{
+
+    background-color: #ebbc00;
+}
